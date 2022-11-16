@@ -1,0 +1,23 @@
+.wrapper{
+    position: absolute;
+    margin: 20px;
+    padding: 10px;
+}
+
+.form-group{
+    padding: 5px;
+}
+
+#submit__button{
+    margin: 5px;
+}
+
+#enter__data{
+    width: 300px;
+}
+
+#grafica{
+    margin: 20px;
+    border: black;
+}
+

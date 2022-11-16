@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Периодическая функция</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="graphics__title">
+        <h2>Построение графика f(x)=A*sin(x/T + F)</h2>
+    </div>
+    <form id="enter__data">
+        <div class="form-group">
+            <label class="aplitude__class">Амплитуда сигнала (A)</label>
+            <input class="form-control" id="amplitude"  placeholder="Введите амплитуду">
+        </div>
+
+        <div class="form-group">
+            <label class="period__class">Период (T)</label>
+            <input class="form-control" id="period"  placeholder="Введите период">
+        </div>
+
+        <div class="form-group">
+            <label class="phase__class">Фаза (F)</label>
+            <input class="form-control" id="phase"  placeholder="Введите фазу">
+        </div>
+
+        <div class="form-group">
+            <label class="width__class">Ширина окна</label>
+            <input class="form-control" id="width"  placeholder="Введите ширину, px">
+        </div>
+
+        <div class="form-group">
+            <label class="height__class">Высота</label>
+            <input class="form-control" id="height"  placeholder="Введите высоту, px">
+        </div>
+
+        <button type="button" class="btn btn-primary" id="submit__button">Построить</button>
+    </form>
+    <canvas id="grafica"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
